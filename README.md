@@ -14,3 +14,10 @@ Among customers who have been subscribed to health insurance since last year, th
 The dataset is obataiend from [Kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction). Train data contains information from 354,405 customers and has 12 features. Test data has a total of 11 features, excluding our target features, for a total of 127,037 customer information. This shows that our target feature is Response. Now let's check what information each feature contains.
 
 
+## Results  
+|Model|F1 score|Area Under Curve(AUC)|Hyper Parameter Optimization|
+|:----------:|:-------------:|:------:|:------:|
+|RandomForest|0.15|0.8462593298989705| RandomizedSearchCV |
+|XGB|0.46|0.8646973570321353| optuna |
+|LGBM| 0.44  |0.866483369025105 | None |
+  
